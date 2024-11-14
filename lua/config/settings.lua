@@ -5,7 +5,7 @@ opt.number = true
 opt.relativenumber = true
 
 -- Set tab preferences
-opt.expandtab = true
+opt.expandtab = false
 opt.shiftwidth = 2
 opt.tabstop = 2
 opt.smartindent = true
