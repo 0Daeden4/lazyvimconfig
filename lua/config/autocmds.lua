@@ -5,10 +5,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
 	end,
 })
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = "*.c",
-    callback = function()
-        vim.opt_local.expandtab = true
-        vim.opt_local.shiftwidth = 2
-        vim.opt_local.tabstop = 2
-    end,
+	--pattern = "*.c",
+	-- since cmp is conflicting
+	callback = function()
+		vim.opt_local.expandtab = true
+		vim.opt_local.shiftwidth = 2
+		vim.opt_local.tabstop = 2
+	end,
 })
