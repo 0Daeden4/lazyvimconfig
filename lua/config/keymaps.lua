@@ -35,3 +35,8 @@ end, { desc = "Switch to previous buffer" })
 map("n", "L", function()
 	vim.cmd("bnext")
 end, { desc = "Switch to next buffer" })
+
+-- LSP keymaps
+map("n", "<leader>rr", function()
+	vim.lsp.buf.rename()
+end, { desc = "LSP Rename" })
